@@ -1,6 +1,6 @@
 var generateBtn = document.querySelector("#generate");
 
-var generateBtn.addEventListener("click", writePassword);
+generateBtn.addEventListener("click", writePassword);
 
 function generatePassword () {
   var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
@@ -9,11 +9,10 @@ function generatePassword () {
   var character = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")"];
   var password = [];
   
-  var confirmLength = prompt("Choose the number of characters you would like your password to be (between 8-128.");
+  var confirmLength = prompt("Choose the number of characters you would like your password to be (between 8-128).");
   
     if (confirmLength < 8 || confirmLength > 128 || isNaN(confirmLength)) {
       alert ("Choice must be between 8 - 128 characters");
-      return;
     }
 
   var confirmAbcUp = confirm("Would like you password to contain uppercase letter?");
@@ -44,10 +43,16 @@ function generatePassword () {
       }
     }
 
-
-var generatePassword = "";
-
-
+var finalPass = "";
+for (i = 0;i < confirmLength; i++) {
+  password [
+    Math.floor(Math.random() * password.length)];
+    finalPass +=
+      password[
+          Math.floor(Math.random() * password.length)];
+}
+return finalPass;
+}
 
 function writePassword() {
   var password = generatePassword();
