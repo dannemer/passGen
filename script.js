@@ -15,14 +15,14 @@ function generatePassword () {
       alert ("Choice must be between 8 - 128 characters");
     }
 
-  var confirmAbcUp = confirm("Would like you password to contain uppercase letter?");
+  var confirmAbcUp = confirm("Would like you password to contain uppercase letters?");
     if (confirmAbcUp === true) {
       for (var i = 0; i < abcUp.length; i++) {
       password.push(abcUp[i])
       }
     }
 
-    var confirmAbcLow = confirm("Would like you password to contain lowercase letter?");
+    var confirmAbcLow = confirm("Would like you password to contain lowercase letters?");
     if (confirmAbcLow === true) {
       for (var i = 0; i < abcLow.length; i++) {
       password.push(abcLow[i])
